@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title text-center color="tertiary" class="ion-text-center" size-xl="15">animal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen  color="primary "><br>
+  <div style="position: relative;width:40%; left:29%;">
+    <ion-img image-center src="assets/ff.png" width="50%"></ion-img>
+    </div>
+  <ion-item color="primary" >
+    <ion-label position="stacked" color="tertiary">Username</ion-label>
+    <ion-input required type="text" oninput="handleFirstNameValue(event)"><ion-icon slot="end" name="contact" color="tertiary"></ion-icon> </ion-input>
+  </ion-item>
+  <ion-item color="primary" >
+    <ion-label position="stacked" color="tertiary">password</ion-label>
+    <ion-input required type="text" oninput="handleFirstNameValue(event)"><ion-icon slot="end" name="key" color="tertiary"></ion-icon> </ion-input>
+  </ion-item>
+  <ion-item color="primary" >
+    <ion-label position="stacked" color="tertiary">e-mail</ion-label>
+    <ion-input required type="text" oninput="handleFirstNameValue(event)"><ion-icon slot="end" name="mail" color="tertiary"></ion-icon> </ion-input>
+  </ion-item>
+  <ion-item color="primary" >
+    <ion-label position="stacked" color="tertiary">phonenumber</ion-label>
+    <ion-input required type="text" oninput="handleFirstNameValue(event)"><ion-icon slot="end" name="call" color="tertiary"></ion-icon> </ion-input>
+  </ion-item>
+
+    <ion-item color="primary">
+       <ion-label>Gender</ion-label>
+       <ion-select placeholder="Select One">
+         <ion-select-option value="f">Female</ion-select-option>
+         <ion-select-option value="m">Male</ion-select-option>
+       </ion-select>
+     </ion-item>
+   <br>
+  
+  <ion-button expand="block"  color="warning" (click)="go()">Done</ion-button>
+  <ion-button expand="block"  color="danger" (click)="go()">cancle</ion-button>
+</ion-content>

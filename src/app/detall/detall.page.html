@@ -1,0 +1,75 @@
+<ion-header >
+  <ion-toolbar color="success">
+    <ion-button slot="start">
+      <ion-back-button defaultFref="/" color="light"></ion-back-button>
+    </ion-button>
+    <ion-title color="tertiary" class="ion-text-center" size-xl="15"> 
+Detall   
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary" fullscreen>
+  
+  <ion-searchbar showCancelButton="focus" cancelButtonText="Cancel" color="secondary"></ion-searchbar>
+  <ion-card color="primary">
+<img src="assets/tt.png" width="15%">
+    <!--<ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>-->
+   <h1 class="ion-text-center">สถานที่เที่ยวจังหวัดพัทลุง</h1>
+   <hr>
+   <h2 class="ion-text-center" >ล่องแก่งหนามมดแดง</h2>
+    <ion-card-content>
+     <img src="assets/s.png" alt="">
+     <hr><hr>
+     <h1 class="ion-text-center" >เขาอกทะลุ</h1><br>
+     <img src="assets/b.png" alt="">
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="primary">
+    <ion-item color="primary">
+      <ion-icon name="pin" slot="start" color="light"></ion-icon>
+      <ion-label>ionic</ion-label>
+      <ion-button fill="outline" slot="end" color="tertiary" (click)="presentAlert()">View</ion-button>
+    </ion-item>
+  
+<p color="danger" class="ion-text-center">Test ionic app Recommend tourist attractions Phatthalung</p>
+  </ion-card>
+
+ 
+    <ion-button color="light" expand ="block" (click)="showName(item)" ion-item *ngFor="let item of groups"><br>
+     {{item.name}}
+    </ion-button>
+
+
+  
+ <ion-button expand ="block" color="danger" (click)="go()">Log out</ion-button>
+
+</ion-content>
+
+<ion-tab-bar slot="bottom" color="medium">
+  <ion-tab-button tab="Home">
+    <ion-label>Home</ion-label>
+    <ion-icon name="home"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button tab="Map">
+    <ion-label>Map</ion-label>
+    <ion-icon name="map"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button tab="Search">
+    <ion-label>Search</ion-label>
+    <ion-icon name="search"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button tab="Profile">
+    <ion-label>Profile</ion-label>
+    <ion-icon name="contact"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>
+
+
+
+
+
